@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mangla Enterprises</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="manglaenterprises.css">
+</head>
+
+<body>
+    <!-- TOP NAVIGATION BAR-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#work">Our Works</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <h3 align="center">&#9776;<img src="21.png" height="50px"></h3>
+    </span>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+
+    <!--TOP PHOTO-->
+    <div class="container" id="about">
+        <img src="https://unsplash.com/photos/x-ghf9LjrVg/download?force=true" alt="Notebook" style="width:100%;">
+        <div class="content">
+            <h1>Mangla Enterprises</h1>
+
+            <p>We are a team of entrepreneurs, We have always endevoured to provide quality items at value for money
+                prices and building a mutual
+                relationship of trust and confidence with our buyers.</p>
+
+        </div>
+    </div>
+
+    <!--ABOUT SECTION-->
+    <div class="bindisection">
+        <div class="bindicoloumn">
+            <div class="bindi">
+                <h1>
+                    <p align="center">Bindi Collections.</p>
+                </h1>
+                <p> All items are sourced directly from artisans which we work with and closely monitor the quality of
+                    products.</p>
+
+                <p> We can also handle India specific items large import orders like Bindi's,herbs,cosmetics
+                    etc.</p>
+
+                <p align="center"> <button class="button"><a href="tel:+91 xxxxxxxxxx">Contact Us</a></button></p>
+            </div>
+        </div>
+
+        <div class="bindicoloumn">
+            <div class="bindi">
+                <img class="know" src="https://unsplash.com/photos/_HzlOHmboSk/download?force=true" height="auto"
+                    width="100%">
+            </div>
+        </div>
+    </div>
+
+    <!--SERVICES-->
+    <div id="services">
+        <h1 align="center">Our Services</h1>
+        <div class="servicessection">
+            <div class="servicecoloumn">
+                <div class="const">
+                    <div class="construction">
+                        <br>
+                        <h2>Construction</h2>
+                    </div>
+                    <p>large public works</p>
+                    <p>Dams</p>
+                    <p>Bridges</p>
+                    <p>highways</p>
+                    <p>residential and non-residential.</p>
+                </div>
+            </div>
+
+            <div class="servicecoloumn">
+                <div class="const">
+                    <div class="design">
+                        <br>
+                        <h2>Designing</h2>
+                    </div>
+                    <p>Architectural Drawings</p>
+                    <p>Structural Drawings</p>
+                    <p>Electrical Drawings</p>
+                    <p>Plumbing and Sanitary Drawings</p>
+                    <p>Finishing Drawing</p>
+                </div>
+            </div>
+
+            <div class="servicecoloumn">
+                <div class="const">
+                    <div class="construction">
+                        <br>
+                        <h2>Bindi</h2>
+                    </div>
+                    <p>Designer Bindi</p>
+                    <p>Bridal Bindi</p>
+                    <p>Layered Bindi</p>
+                    <p>‘Snake’ Style Bindi</p>
+                    <p>Maharashtrian Style Bindi</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!--work-->
+    <div id="work">
+        <h1 align="center">OUR WORKS</h1>
+        <p align="center">
+            <q>What we've done for people</q>
+        </p>
+        <div class="workrow">
+            <div class="workcoloumn">
+                <img src="8.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="workcoloumn">
+                <img src="10.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="workcoloumn">
+                <img src="11.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="workcoloumn">
+                <img src="14.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="8.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="10.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="11.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="14.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+
+                <div class="workcoloumn">
+                    <img class="demo cursor" src="8.jpg" style="width:100%" onclick="currentSlide(1)"
+                        alt="Nature and sunrise">
+                </div>
+                <div class="workcoloumn">
+                    <img class="demo cursor" src="10.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                </div>
+                <div class="workcoloumn">
+                    <img class="demo cursor" src="11.jpg" style="width:100%" onclick="currentSlide(3)"
+                        alt="Mountains and fjords">
+                </div>
+                <div class="workcoloumn">
+                    <img class="demo cursor" src="14.jpg" style="width:100%" onclick="currentSlide(4)"
+                        alt="Northern Lights">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
+            }
+
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+        </script>
+    </div>
+
+    <!--THE TEAM-->
+    <div id="team">
+        <h1 align="center">THE TEAM</h1>
+        <p align="center">
+            <q>The ones who runs this company</q>
+        </p>
+
+        <div id="services">
+            <div class="servicessection">
+                <div class="servicecoloumn">
+                    <div class="team">
+                        <div class="team1">
+                            <img src="6.jpg" height=100% width=100% alt="ceo photo">
+                        </div>
+                        <p>
+                        <h2 align="center">Katherine Ross</h2>
+                        </p>
+                        <p align="center">CEO & Founder</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+                <div class="servicecoloumn">
+                    <div class="team">
+                        <div class="team1">
+                            <img src="5.jpg" height=100% width=100% alt="ceo photo">
+                        </div>
+                        <p>
+                        <h2 align="center">John Doe</h2>
+                        </p>
+                        <p align="center">Marketing Head</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+                <div class="servicecoloumn">
+                    <div class="team">
+                        <div class="team1">
+                            <img src="7.jpg" height=100% width=100% alt="ceo photo">
+                        </div>
+                        <p>
+                        <h2 align="center">Dan Star</h2>
+                        </p>
+                        <p align="center">Team Head</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--Contact section-->
+    <div id="contact">
+        <div class="contactus">
+            <h1 align="center"> Contact Us</h1>
+
+            <p align="center">
+                <img src="icon.png" height="50px" width="30px"> 1984 Beechwood Drive, CHURCH ROCK, New Mexico <br>
+                zip-code:-87311
+            </p>
+
+            <p align="center">
+                <img src="icon1.png" height="20px" width="18px"> <a href="tel:+52 xxxxxxxxxx"
+                    style="color: brown">+52-xxxxxxxxxx</a>
+            </p>
+
+            <p align="center">
+                <img src="icon2.png" height="20px" width="20px"> Email: xxxxxxxxx@gmail.com
+            </p>
+
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="scroller">
+            <a href="#about" style="color: black"><img src="icon3.png" height="25px" width="25px"> To the top</a>
+        </div>
+        <div class="scroll1">
+            <a href="https://www.facebook.com/"><img src="f.png" height="25px" width="25px"></a>
+            <a href="https://www.instagram.com/"><img src="i.png" height="25px" width="25px"></a>
+            <a href="https://twitter.com/?lang=en"><img src="t.png" height="25px" width="25px"></a>
+            <a href="https://in.linkedin.com/"><img src="l.png" height="25px" width="25px"></a>
+        </div>
+
+
+        <h5 style="color: white">Copyright by @ Mangla Enterprises 2021</h5>
+    </div>
+
+</body>
+
+</html>
